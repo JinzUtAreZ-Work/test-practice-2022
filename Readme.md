@@ -14,4 +14,25 @@ ctrl shift + o >lintel
 
 6. npx husky-init && npm install
 7. npm install husky --save-dev
-8. "type-check": "tsc -p tsconfig.json --noEmit" in package.json for husky git commit
+8. npx husky-init
+
+# inside pre-commit
+
+npm run type-check
+npx lint-staged
+
+9. "type-check": "tsc -p tsconfig.json --noEmit" in package.json for husky git commit
+
+# npm installation
+
+1. npm install @mui/material @emotion/react @emotion/styled
+
+# missing package.json
+
+1. "lint-staged": {
+   "\*_/_.{js,jsx,ts,tsx}": [
+   "npx eslint",
+   "npx prettier --write"
+   ]
+   }
+2. eslintrc.json -> "parserOptions" = "project": "./tsconfig.json"
