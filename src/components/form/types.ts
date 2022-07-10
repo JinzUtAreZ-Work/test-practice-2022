@@ -1,7 +1,7 @@
 export type BaseInputProps<Type = object> = Type & {
   name: string;
   label?: string;
-  error?: string;
+  error?: boolean;
   helperText?: string;
 };
 

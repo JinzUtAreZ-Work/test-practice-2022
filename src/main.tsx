@@ -1,10 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import { StrictMode } from 'react';
+import App from './App';
+import './index.css';
+import { AuthProvider } from '~/contexts/auth-context';
+import { BrowserRouter } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import { ThemeProvider } from '@emotion/react';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+import theme from '~/theme';
+const container = document.getElementById('root') as HTMLElement;
+const root = createRoot(container);
+
+root.render(
+  <StrictMode>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <AuthProvider>
+          <App />
+        </AuthProvider>
+      </BrowserRouter>
+    </ThemeProvider>
+  </StrictMode>,
+);

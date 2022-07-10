@@ -36,3 +36,9 @@ npx lint-staged
    ]
    }
 2. eslintrc.json -> "parserOptions" = "project": "./tsconfig.json"
+
+# location error fix
+
+1. npm i -D vite-tsconfig-paths
+2. npm i -D vite-plugin-checker
+3. npm i -D vite-plugin-svg-icons
