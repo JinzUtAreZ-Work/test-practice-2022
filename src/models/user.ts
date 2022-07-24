@@ -2,8 +2,9 @@ export type Role =
   | 'preparer'
   | 'approver'
   | 'admin_preparer'
-  | 'admin_approver';
-
+  | 'admin_approver'
+  | 'supervisor'
+  | 'operator';
 export interface User {
   id: string;
   name: string;
@@ -13,4 +14,22 @@ export interface User {
   department: string;
   email: string;
   role?: Role;
+}
+
+export type AccountTag =
+  | 'Sensitive Client'
+  | 'Complaint'
+  | 'VIP'
+  | 'Bankruptcy'
+  | 'AML';
+
+export interface AccountInformation {
+  name: string;
+  tags?: AccountTag[];
+  accountNumber?: string;
+  trustee?: string;
+  hkid?: string;
+  scheme?: string;
+  accountType?: string;
+  accountStatus?: string;
 }

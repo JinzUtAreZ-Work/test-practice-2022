@@ -21,18 +21,22 @@ declare module '@mui/material/styles' {
     gray: PaletteColor;
     metalicBlue: PaletteColor;
     spanishGray: PaletteColor;
-    independence: PalleteColor;
-    deepPurple: PalleteColor;
-    indigo: PalleteColor;
-    blue: PalleteColor;
-    green: PalleteColor;
-    lightGreen: PalleteColor;
-    lime: PalleteColor;
-    deepOrange: PalleteColor;
-    brown: PalleteColor;
-    yellow: PalleteColor;
+    independence: PaletteColor;
+    sonicSilver: PaletteColor;
+    halloweenOrange: PaletteColor;
+    marigold: PaletteColor;
+    middleYellow: PaletteColor;
+    deepPurple: PaletteColor;
+    indigo: PaletteColor;
+    blue: PaletteColor;
+    green: PaletteColor;
+    lightGreen: PaletteColor;
+    lime: PaletteColor;
+    deepOrange: PaletteColor;
+    brown: PaletteColor;
+    yellow: PaletteColor;
     white: PaletteColor;
-    lavenderIndigo: PalleteColor;
+    lavenderIndigo: PaletteColor;
     telemagenta: PaletteColor;
   }
 
@@ -40,19 +44,23 @@ declare module '@mui/material/styles' {
     gray: PaletteColorOptions;
     metalicBlue: PaletteColorOptions;
     spanishGray: PaletteColorOptions;
-    independence: PalleteColorOptions;
-    deepPurple: PalleteColorOptions;
-    indigo: PalleteColorOptions;
-    blue: PalleteColorOptions;
-    green: PalleteColorOptions;
-    lightGreen: PalleteColorOptions;
-    lime: PalleteColorOptions;
-    deepOrange: PalleteColorOptions;
-    brown: PalleteColorOptions;
-    yellow: PalleteColorOptions;
-    white: PalleteColorOptions;
-    lavenderIndigo: PalleteColorOptions;
-    telemagenta: PalleteColorOptions;
+    independence: PaletteColorOptions;
+    sonicSilver: PaletteColorOptions;
+    halloweenOrange: PaletteColorOptions;
+    marigold: PaletteColorOptions;
+    middleYellow: PaletteColorOptions;
+    deepPurple: PaletteColorOptions;
+    indigo: PaletteColorOptions;
+    blue: PaletteColorOptions;
+    green: PaletteColorOptions;
+    lightGreen: PaletteColorOptions;
+    lime: PaletteColorOptions;
+    deepOrange: PaletteColorOptions;
+    brown: PaletteColorOptions;
+    yellow: PaletteColorOptions;
+    white: PaletteColorOptions;
+    lavenderIndigo: PaletteColorOptions;
+    telemagenta: PaletteColorOptions;
   }
 }
 
@@ -62,6 +70,10 @@ declare module '@mui/material/Button' {
     metalicBlue: true;
     spanishGray: true;
     independence: true;
+    sonicSilver: true;
+    halloweenOrange: true;
+    marigold: true;
+    middleYellow: true;
     white: true;
     lavenderIndigo: true;
     telemagenta: true;
@@ -74,6 +86,10 @@ declare module '@mui/material/IconButton' {
     metalicBlue: true;
     spanishGray: true;
     independence: true;
+    sonicSilver: true;
+    halloweenOrange: true;
+    marigold: true;
+    middleYellow: true;
     lavenderIndigo: true;
     telemagenta: true;
   }
@@ -84,6 +100,10 @@ declare module '@mui/material/SvgIcon' {
     metalicBlue: true;
     spanishGray: true;
     independence: true;
+    sonicSilver: true;
+    halloweenOrange: true;
+    marigold: true;
+    middleYellow: true;
     lavenderIndigo: true;
     telemagenta: true;
   }
@@ -100,5 +120,10 @@ declare module '@mui/material/Chip' {
     deepOrange: true;
     brown: true;
     yellow: true;
+    independence: true;
+    sonicSilver: true;
+    halloweenOrange: true;
+    marigold: true;
+    middleYellow: true;
   }
 }

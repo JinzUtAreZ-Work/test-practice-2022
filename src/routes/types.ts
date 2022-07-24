@@ -8,3 +8,7 @@ export interface Route extends Omit<RouteObject, 'children'> {
   children?: Route[];
   permissions?: Role[];
 }
+export interface UseAppRoutesResult {
+  AppRoutes: ReactElement | null;
+  userRoutes: Route[];
+}

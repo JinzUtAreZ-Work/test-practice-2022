@@ -15,7 +15,9 @@ interface CollapsedMenuItemsProps {
   popupState: PopupState;
 }
 
-const CollapsedMenuItems = (props: CollapsedMenuItemsProps): ReactElement => {
+export const CollapsedMenuItems = (
+  props: CollapsedMenuItemsProps,
+): ReactElement => {
   const { route, popupState } = props;
   const navigate = useNavigate();
 

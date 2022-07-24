@@ -51,6 +51,23 @@ const theme = createTheme({
     },
     independence: {
       main: '#42526E',
+      contrastText: '#FFFFFF',
+    },
+    sonicSilver: {
+      main: '#777777',
+      contrastText: '#FFFFFF',
+    },
+    halloweenOrange: {
+      main: '#ED562D',
+      contrastText: '#FFFFFF',
+    },
+    marigold: {
+      main: '#EF9F1F',
+      contrastText: '#FFFFFF',
+    },
+    middleYellow: {
+      main: '#FFEB00',
+      contrastText: '#333333',
     },
     lavenderIndigo: {
       main: '#9D4DE1',

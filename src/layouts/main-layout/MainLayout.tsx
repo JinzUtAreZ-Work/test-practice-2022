@@ -12,9 +12,12 @@ const StyledContainer = styled('div')({
 
 const StyledContent = styled('div')(({ theme }) => ({
   flexGrow: 1,
-  padding: theme.spacing(3, 4),
   marginBottom: theme.spacing(6),
   minHeight: `calc(100% - ${theme.mixins.toolbar.minHeight}px)`,
+}));
+
+const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+  minHeight: theme.spacing(6.5),
 }));
 
 type MainProps = PropsWithChildren;
@@ -27,7 +30,7 @@ export const MainLayout = (props: MainProps): ReactElement => {
       <Navbar />
       <Sidebar />
       <StyledContent>
-        <Toolbar />
+        <StyledToolbar />
         {children}
       </StyledContent>
     </StyledContainer>

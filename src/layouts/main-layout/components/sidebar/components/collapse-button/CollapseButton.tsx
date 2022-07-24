@@ -27,7 +27,7 @@ interface CollapseButtonProps {
   onClick: () => void;
 }
 
-const CollapseButton = (props: CollapseButtonProps): ReactElement => {
+export const CollapseButton = (props: CollapseButtonProps): ReactElement => {
   const { isCollapsed, onClick } = props;
 
   return (

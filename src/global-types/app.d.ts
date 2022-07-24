@@ -28,17 +28,22 @@ declare global {
   };
 
   export type MuiColor =
-    | 'inherit'
+    | 'default'
+    //| 'inherit'
     | 'primary'
     | 'secondary'
     | 'error'
     | 'info'
     | 'success'
     | 'warning'
-    | 'gray'
-    | 'metalicBlue'
-    | 'spanishGray'
+    //| 'gray'
+    //| 'metalicBlue'
+    //| 'spanishGray'
     | 'independence'
-    | 'lavenderIndigo'
-    | 'telemagenta';
+    //| 'lavenderIndigo'
+    //| 'telemagenta'
+    | 'sonicSilver'
+    | 'halloweenOrange'
+    | 'marigold'
+    | 'middleYellow';
 }

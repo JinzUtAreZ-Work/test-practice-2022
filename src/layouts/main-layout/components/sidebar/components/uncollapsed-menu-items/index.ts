@@ -1,1 +1,1 @@
-export { default } from './UncollapsedMenuIems';
+export * from './UncollapsedMenuIems';

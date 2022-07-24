@@ -7,7 +7,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import ArrowDropDownCircleOutlinedIcon from '@mui/icons-material/ArrowDropDownCircleOutlined';
 
-import { getRoutesByLocation } from '~/routes';
+import { useRoutesByLocation } from '~/routes';
 
 const StyledContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -28,8 +28,9 @@ const StyledBreadcrumbs = styled(Breadcrumbs)(({ theme }) => ({
   color: theme.palette.common.white,
 }));
 
-export const SiteMap = (): ReactElement => {
-  const currentRoutes = getRoutesByLocation();
+export const SiteMap = (): ReactElement | null => {
+  const currentRoutes = useRoutesByLocation();
+  if (!currentRoutes.length) return null;
 
   return (
     <StyledContainer aria-label="sitemap" color="inherit">

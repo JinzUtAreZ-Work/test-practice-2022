@@ -80,7 +80,7 @@ interface MenuItemProps extends Route {
   popMenuHoverProps?: ReturnType<typeof bindHover>;
 }
 
-const MenuItem = (props: MenuItemProps): ReactElement => {
+export const MenuItem = (props: MenuItemProps): ReactElement => {
   const {
     type = 'link',
     path,

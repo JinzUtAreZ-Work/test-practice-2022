@@ -11,12 +11,14 @@ import { deepSearch } from '~/utils';
 import { useAppRoutes } from '~/hooks';
 import { useAuthContext } from '~/contexts/auth-context';
 
-import CollapseButton from './components/collapse-button';
-import CollapsedMenuItems from './components/collapsed-menu-items';
-import Drawer from './components/drawer';
-import DrawerContent from './components/drawer-content';
-import MenuItem from './components/menu-item';
-import UnCollapsedMenuItems from './components/uncollapsed-menu-items';
+import {
+  Drawer,
+  CollapseButton,
+  DrawerContent,
+  MenuItem,
+  CollapsedMenuItems,
+  UnCollapsedMenuItems,
+} from './components';
 
 export const Sidebar = (): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);

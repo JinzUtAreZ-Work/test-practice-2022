@@ -4,13 +4,13 @@ import type { Route } from '~/routes';
 import { v4 as uuidv4 } from 'uuid';
 
 import { getSubMenuPath } from '../utils';
-import MenuItem from '../menu-item/index';
+import { MenuItem } from '..';
 
 interface UncollapsedMenuItemsProps {
   route: Route;
 }
 
-const UnCollapsedMenuItems = (
+export const UnCollapsedMenuItems = (
   props: UncollapsedMenuItemsProps,
 ): ReactElement => {
   const { route } = props;
