@@ -5,9 +5,12 @@ import type { BaseInputProps } from '../types';
 import ReactDatePicker from 'react-datepicker';
 import TextField from '@mui/material/TextField';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-
+import { styled } from '@mui/material/styles';
 import { Header } from './components';
 
+const StyledCalendarMonthIcon = styled(CalendarMonthIcon)(({ theme }) => ({
+  color: theme.palette.text.secondary,
+}));
 interface DatePickerProps
   extends BaseInputProps<
     Omit<ReactDatePickerProps, 'selectsRange' | 'onChange'>
@@ -57,7 +60,7 @@ export const DatePicker = (props: DatePickerProps): ReactElement => {
           error={error}
           helperText={helperText}
           InputProps={{
-            endAdornment: <CalendarMonthIcon color="spanishGray" />,
+            endAdornment: <StyledCalendarMonthIcon />,
           }}
         />
       }

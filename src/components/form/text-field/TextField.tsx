@@ -5,7 +5,7 @@ import MuiTextField from '@mui/material/TextField';
 
 type MuiTextFieldProps = BaseInputProps<TextFieldProps>;
 
-const TextField = (props: MuiTextFieldProps): ReactElement => {
+export const TextField = (props: MuiTextFieldProps): ReactElement => {
   const { name, placeholder = 'Place input', ...rest } = props;
   return <MuiTextField id={name} placeholder={placeholder} {...rest} />;
 };

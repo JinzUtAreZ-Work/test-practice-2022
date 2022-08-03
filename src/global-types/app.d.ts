@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ReactElement, ReactNode } from 'react';
 
 declare global {
   export type DateFormat =
@@ -46,4 +46,10 @@ declare global {
     | 'halloweenOrange'
     | 'marigold'
     | 'middleYellow';
+
+  export interface TabObject {
+    label: string;
+    icon?: ReactElement;
+    element: ReactElement;
+  }
 }
