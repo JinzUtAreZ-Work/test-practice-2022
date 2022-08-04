@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import { visuallyHidden } from '@mui/utils';
 
 interface HiddenLoadingTextProps {
-  isLoading: false;
+  isLoading: boolean;
 }
 
 export const HiddenLoadingText = (
